@@ -1,0 +1,28 @@
+{
+  "name": "power-outages",
+  "version": "0.1.0",
+  "description": "Phone-friendly power-outage schedule for any Kyiv group",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "snapshots": "bun --env-file=.env.production.local scripts/snapshots.ts"
+  },
+  "dependencies": {
+    "@upstash/qstash": "^2.12.1",
+    "@upstash/redis": "^1.41.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.3.0"
+  },
+  "license": "MIT"
+}
